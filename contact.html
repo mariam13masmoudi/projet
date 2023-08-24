@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div>
+    <a href="home.html#contact">retourner à la  page home</a>
+    <img src="strass-accessoires-logo-1597762736.jpg">
+</div>
+         <h2 id="contact" >voici ce formulaire à remplir et merci </h2>
+         
+       <fieldset>
+	     <legend>Remplir le formulaire s'il vous plait et bienvenue</legend>
+      <form method="post" action="traitement.php">
+	  <table>
+	    <tr>
+		  <td><label for="nom" >Nom</label></td>
+		  <td><input type="text" name="nom" id="nom" required size="10"></td>
+        </tr>
+		  <tr>
+		   <td><label for="prenom">Prénom</label></td>
+		  <td><input type="text" name="prenom" id="prenom" required size="10"></td>
+		   </tr>
+		   <tr>
+		     <td><label for="CIN">CIN</label></td>
+              <td><input type="text" id="CIN" required maxlength="8" pattern="[0 9]{8}"  title="8 carac seulement"></td>
+			 </tr>
+			 <tr>
+		     <td><label for="sexe">Sexe</label></td>
+              <td><input type="radio" name="sexe" id="femme" value="féminin">
+			  <label for="sexe">Femme</label>
+              <input type="radio" name="sexe" id="Homme" value="masculin" >
+              <label  for="sexe">Homme</label>
+               </td>
+			 </tr>
+			 <tr>
+			   <td><label for="date" >Date de naissance</label></td>
+			   <td><input type="date" id="date" name="date"></td>
+			   </tr>
+			   <tr>
+			   <td><label for="age" >Age</label></td>
+			   <td><input type="number" id="age" name="age" ></td>
+			   </tr>
+			   <tr>
+                <td><label for="address">Address</label></td>
+             <td><textarea name="address" id="address" rows="5" cols="5" ></textarea></td>
+             </tr>
+                 <tr>
+              <td><label for="ville" >Ville</label> </td>
+               <td><select name="ville" id="ville">
+                      <option value="sfax" selected>Sfax</option>
+                      <option value="tunis">Tunis</option>
+                      <option value="sousse">Sousse</option>
+					  <option value="manouba">Manouba</option>
+					  <option value="aryena">Aryena</option>
+					  <option value="ben arous">Ben Arous</option>
+					  <option value="bizerte">Bizerte</option>
+					  <option value="gabes">Gabes</option>
+					  <option value="nabeul">Nabeul</option>
+					  <option value="monastir">Monastir</option>
+					  <option value="beja">Beja</option>
+                      </select>
+                     </td>
+                    </tr>
+				<tr>
+                    <td><label for="Telephone">Telephone</label></td>
+                     <td> <input type="tel" name="Telephone"id="Telephone" ></td>
+                  </tr>
+				  <tr>
+                    <td><label for="mail">Email</label></td>
+                     <td> <input type="mail" name="mail" id="mail" placeholder="ex:myname@examp.com" > </td>
+                  </tr> 
+                  <tr>
+                    <td><label for="Message">Message</label></td>
+                 <td><textarea name="Message" id="Message" rows="5" cols="5" ></textarea></td>
+                 </tr>
+					  <tr>
+					    <td colspan="2"><label for="fi">La vérification est terminé</label>
+						<input type="checkbox" name="fi" id="fi"> </td>
+						</tr>
+                    <tr>
+                      <td><input type="submit" value="Envoyer">
+                       <input type="reset" value="Effacer la saisie"></td>
+                        </tr>
+
+						
+</table>
+</form>
+</fieldset>
+</body>
+</html>
